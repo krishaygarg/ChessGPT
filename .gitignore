@@ -205,3 +205,21 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Datasets and Large Data Files
+*.pgn
+*.pgn.zst
+filtered_games.pgn
+lichess_db_standard_rated_2013-01.pgn.zst
+move_sequences.txt
+
+# Model Checkpoints & Output Weights
+*.pt
+*.pth
+*.safetensors
+*.bin
+train_dir/checkpoints/
+wandb/
+
+# OS / Editor Files
+.DS_Store
