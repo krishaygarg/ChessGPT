@@ -33,14 +33,19 @@ ChessGPT/
 ├── train_dir/
 │   ├── inference_node.py     # Asynchronous vLLM candidate generation server
 │   ├── training_node.py      # PyTorch & LoRA policy update worker
-│   ├── data_sampler.py       # PGN position sampler and FEN parser
 │   └── main.py              # Multi-GPU orchestrator for training & inference
-├── filter_lichess_games.py  # Utility to parse and filter high-Elo Lichess PGN databases
+├── train_grpo.py             # Standalone GRPO reinforcement learning training loop
 ├── finetuning.py             # Supervised & RL fine-tuning routines
-├── train_grpo.py             # Standalone GRPO training loop
+├── training_loop.py          # Custom PyTorch training loop
 ├── reward.py                 # Stockfish-backed reward evaluation system
 ├── vllm.py                   # Custom vLLM sampling configuration
-└── requirements.txt          # Python dependencies
+├── data_sampler.py           # PGN position sampler and FEN parser
+├── filter_lichess_games.py  # Utility to parse and filter high-Elo Lichess PGN databases
+├── get_move_sequences.py     # Move sequence extraction helper
+├── preprocess_position.py   # Board position preprocessing & prompt formatter
+├── requirements.txt          # Python dependencies
+├── LICENSE                   # MIT License
+└── README.md                 # Project documentation
 ```
 
 ---
